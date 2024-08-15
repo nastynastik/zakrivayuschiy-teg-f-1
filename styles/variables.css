@@ -1,1 +1,46 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+    --font-accent: "PressStart2P", fantasy;
+    --font-main: "Inter-Variable", sans-serif;
+    --button-color: #fff;
+    --contour: #000;
+    --heart-color: #ff0000;
+    --core: rgba(256, 0, 0, 0);
+  }
+
+  @media (prefers-color-scheme: light) {
+    :root {
+    --page: #FFF;
+    --bg-color: var(--page);
+    --header-bg: var(--page);
+    --bg-color: #D3D3D3;
+    --bg-color-start: #e7e7e7;
+    --bg-color-end: #1a1a1a;
+    --main-weight: 400;
+    --font-weight: 700;
+    --accent-color: #000;
+    --button-color: #fff;
+    --border-color: #000000;
+    --mix-blend-color: #000000;
+    --label-stroke-color: #FFF;
+    --stroke-color: var(--accent-color);
+    }
+  }
+   
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --page: #000;
+      --header-bg: var(--page);
+      --bg-color: var(--page);
+      --bg-color-start: #007f0c;
+      --bg-color-end: #004306;
+      --main-weight: 400;
+      --font-weight: 700;
+      --accent-color: #00cc14;
+      --button-color: #00CC14;
+      --border-color: #00CC14;
+      --mix-blend-color: #00CC14;
+      --label-stroke-color: #000;
+      --stroke-color: var(--accent-color);
+  }
+  }
