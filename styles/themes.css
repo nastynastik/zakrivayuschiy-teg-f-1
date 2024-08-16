@@ -18,6 +18,7 @@
   --mix-blend-color: #000000;
   --label-stroke-color: #FFF;
   --stroke-color: var(--accent-color);
+  --text-font-weight: "wght" 400;
 
 }
 
@@ -35,4 +36,24 @@
   --mix-blend-color: #00CC14;
   --label-stroke-color: #000;
   --stroke-color: var(--accent-color);
+  --text-font-weight: "wght" 465;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+  --page: #000;
+  --header-bg: var(--page);
+  --bg-color: var(--page);
+  --bg-color-start: #007f0c;
+  --bg-color-end: #004306;
+  --main-weight: 400;
+  --font-weight: 700;
+  --accent-color: #00cc14; 
+  --button-color: #00CC14;
+  --border-color: #00CC14;
+  --mix-blend-color: #00CC14;
+  --label-stroke-color: #000;
+  --stroke-color: var(--accent-color);
+  --text-font-weight: "wght" 465;
+}
 }
