@@ -1,2 +1,2 @@
-Проект №4 https://nastynastik.github.io/zakrivayuschiy-teg-f-1/
+Проект №4 : https://github.com/nastynastik/zakrivayuschiy-teg-f 
 от Stepanova.A.S
