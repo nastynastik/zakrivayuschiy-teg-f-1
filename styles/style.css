@@ -31,8 +31,8 @@
   display: flex;
   flex-direction: column;
   align-content: normal;
-  text-align: center;
   inline-size: 100%;
+  text-align: center;
   padding: 136px 0 23px;
   font-family: var(--font-main);
   text-transform: uppercase;
@@ -41,7 +41,6 @@
   border: 2px solid var(--accent-color);
   margin-block-end: 100px;
   margin-block-start: 100px;
-  gap: 10px;
 }
 
 .header__logo {
@@ -49,6 +48,7 @@
   text-transform: uppercase;
   font-family: var(--font-accent);
   color: var(--accent-color);
+  padding-block-end: 20px;
 }
 
 .header__logo:focus-visible {
@@ -68,6 +68,7 @@
   position: absolute;
   z-index: 1;
   color: var(--accent-color);
+  font-variation-settings: var(--text-font-weight);
   opacity: 0.5;
   mix-blend-mode: hard-light;
   font-family: var(--font-accent);
@@ -95,11 +96,10 @@
 .main {
   display: flex;
   flex-direction: column;
-  gap: 53px;
+  gap: 50px;
 }
 
 .theme-menu {
-  padding-inline-start: 20px;
   font-family: var(--font-accent);
 }
 
@@ -111,7 +111,7 @@
   width: min-content;
   text-align: start;
   margin: auto;
-  padding-left: 27px;
+  padding-left: 20px;
 }
 
 .theme-menu__item {
@@ -205,7 +205,7 @@
 .section {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 46px;
 }
 
 .blog__title {
@@ -213,9 +213,9 @@
   font-family: var(--font-main), monospace;
   font-size: 18px;
   font-style: normal;
-  font-weight: var(--font-weight);
   line-height: normal;
   padding: 4px 10px 4px 10px;
+  font-variation-settings: var(--title-font-weight);
 }
 
 .blog_img-zone {
@@ -311,8 +311,8 @@
   border: 2px solid transparent;
   cursor: pointer;
   padding: 0;
-  width: 39px;
-  height: 36px;
+  width: 43px;
+  height: 38px;
 }
 
 .card__icon-button:focus {
@@ -321,12 +321,12 @@
 }
 
 .card__icon-button:focus-visible {
-  outline: 2px solid var(--accent-color);
+  border: 2px solid var(--accent-color);
 }
 
 .card__like-button {
   width: 130px;
-  padding: 9px 17px;
+  padding: 11px 17px;
 }
 
 .save-button {
@@ -336,8 +336,9 @@
   margin-inline: auto;
   width: 335px;
   height: 55px;
-  margin-block-start: 50px;
-  margin-block-end: 100px;
+  gap: 8px;
+  margin-bottom: 100px;
+  margin-block-start: 48px;
   border: 2px solid var(--accent-color);
 }
 
@@ -359,8 +360,6 @@
 .like-icon {
   display: flex;
   align-items: center;
-  width: inherit;
-  height: inherit;
   fill: var(--accent-color);
   position: relative;
   z-index: 1;
@@ -397,7 +396,7 @@
 }
 
 .floopy-image.floopy-image-dialog {
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .modal-window__button {
@@ -423,7 +422,7 @@
   text-transform: uppercase;
   max-width: 260px;
   width: 100%;
-  line-height: 150%;
+  line-height: 130%;
 }
 
 @media (width <= 400px) {
@@ -437,11 +436,12 @@
   top: 24px;
 }
 
-.floppy-image {
+.floopy-image.button__text {
   width: 28px;
   height: 28px;
+  margin-bottom: 10px;
 }
-  
+
 .header {
   padding: 120px 0 24px;
  }
@@ -454,6 +454,7 @@
   flex-direction: column;
   width: 306px;
   height: 84px;
+  margin-block-start: 52px;
 }
 
 }
