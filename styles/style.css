@@ -23,6 +23,8 @@
   max-inline-size: 700px;
   margin: auto;
   background: var(--background);
+  background-attachment: fixed;
+  background-size: cover;
   color: var(--accent-color);
   font-variation-settings: "wght" var(--text-font-weight);
 }
@@ -289,7 +291,7 @@
   font-family: var(--font-main);
   font-size: 18px;
   font-style: normal;
-  font-weight: var( --main-weight);
+  font-variation-settings: var(--text-font-weight);
   line-height: 116.667%;
   padding: 0px 20px 0 25px;
   display: flex;
@@ -313,11 +315,11 @@
   padding: 0;
   width: 43px;
   height: 38px;
+  transition: 0.3s ease;
 }
 
 .card__icon-button:focus {
   outline: none;
-  transition: 0.3s ease;
 }
 
 .card__icon-button:focus-visible {
@@ -336,7 +338,6 @@
   margin-inline: auto;
   width: 335px;
   height: 55px;
-  gap: 8px;
   margin-bottom: 100px;
   margin-block-start: 48px;
   border: 2px solid var(--accent-color);
@@ -396,7 +397,7 @@
 }
 
 .floopy-image.floopy-image-dialog {
-  margin-top: 15px;
+  margin-top: 7px;
 }
 
 .modal-window__button {
@@ -420,9 +421,10 @@
 
 .dialog-title {
   text-transform: uppercase;
-  max-width: 260px;
+  max-width: 220px;
   width: 100%;
   line-height: 130%;
+  font-size: 14px;
 }
 
 @media (width <= 400px) {
@@ -444,12 +446,14 @@
 
 .header {
   padding: 120px 0 24px;
- }
+}
   
 .dialog {
   padding-inline: 40px;
 }
-
+.button__text {
+  margin-bottom: 3px;
+}
 .save-button {
   flex-direction: column;
   width: 306px;
